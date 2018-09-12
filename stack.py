@@ -10,7 +10,7 @@ class Stack:
     def push(self, data):
         self.top = Node(data, self.top)
     
-    def pull(self):
+    def pop(self):
         if self.top is None:
             return None
         temp = self.top.data
